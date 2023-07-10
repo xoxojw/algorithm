@@ -1,3 +1,1 @@
-function solution(myString) {
-    return myString.split('x').filter((v) => v !== "").sort()
-}
+const solution=s=>s.match(/[^x]+/g).sort()
