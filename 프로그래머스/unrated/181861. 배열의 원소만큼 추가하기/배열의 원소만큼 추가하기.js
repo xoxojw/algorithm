@@ -1,9 +1,2 @@
-const solution = (arr) => {
-    let answer = [];
-    for (let i=0; i<=arr.length; i++) {
-        for (let j=1; j<=arr[i]; j++) {
-            answer.push(arr[i])
-        }
-    }
-    return answer
-}
+// reduce와 fill()를 사용한 풀이
+const solution = (arr) => arr.reduce((list, num) => [...list, ...new Array(num).fill(num)], []);
