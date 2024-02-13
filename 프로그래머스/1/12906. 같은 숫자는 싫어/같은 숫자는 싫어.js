@@ -1,1 +1,1 @@
-const solution = (arr) => arr.filter((v, i) => v != arr[i+1])
+const solution = (arr) => arr.filter((_, i) => arr[i] !== arr[i+1])
