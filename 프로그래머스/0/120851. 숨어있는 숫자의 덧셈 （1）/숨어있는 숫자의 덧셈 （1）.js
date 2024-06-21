@@ -1,0 +1,1 @@
+const solution = my_string => [...my_string].map(e => Number(e)).filter(v => v).reduce((acc, cur) => acc+cur);
