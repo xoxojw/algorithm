@@ -1,1 +1,2 @@
-const solution = my_string => [...my_string].map(e => Number(e)).filter(v => v).reduce((acc, cur) => acc+cur);
+// const solution = my_string => [...my_string].map(e => Number(e)).filter(v => v).reduce((acc, cur) => acc+cur);
+const solution = my_string => [...my_string].filter(Number).map(Number).reduce((a,b)=>a+b);
