@@ -5,18 +5,8 @@
  * @return {number}
  */
 var reduce = function(nums, fn, init) {
-    let result = init;
-
-    function helper(helperInput) {
-        // 종료 조건
-        if (helperInput.length === 0) return;
-        
-        // 재귀호출
-        result = fn(result, helperInput[0]);
-        helper(helperInput.slice(1));
-    }
-
-    helper(nums);
-
-    return result;
+    nums.forEach((val) => 
+        init = fn(init, val)
+    )
+    return init;
 };
